@@ -1,0 +1,184 @@
+/* MILESTONE 1: Default setup */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  height: inherit;
+  width: 450px;
+  margin: 0px auto;
+  justify-content: center;
+}
+
+/* MILESTONE 2 SIGNUP WITH FACEBOOK SECTION */
+
+header .container{
+  display: block;
+}
+.spotify-logo {
+  width: 132px;
+  margin:0px auto;
+}
+
+header{
+  margin-top:40px;
+  margin-bottom:32px;
+  text-align: center;
+}
+
+header h1 {
+  font-size:25px;
+  padding-top:40px;
+}
+
+.fb-signup {
+  display: block;
+  color: white;
+  font-size:16px;
+  font-weight:bold;
+  border: 0;
+  border-radius: 500px;
+  background-color:#1877F2;
+  height: 48px; width: 230px;
+  margin: 0 auto;
+}
+
+.fb-signup:hover {
+  height: 50px; width: 232px;
+  font-size:16.5px;
+  background-color:#359eff;
+}
+
+main .container .terms-conditions{
+  display:block;
+  font-size:10px;
+  font-weight:lighter;
+}
+main .container a{
+  color: rgb(29,185,84);
+}
+main .container a:hover{
+  color: rgb(47, 216, 106);
+}
+
+/* MILESTONE 3: DIVIDER */
+.divider {
+  display:table;
+  font-size:13px;
+  font-weight:lighter;
+  letter-spacing: 2px;
+  line-height:24px;
+  margin:0px auto 1em;
+  color:rgb(127,127,127);
+  position:relative;
+  text-align: center;
+  width:85%;
+}
+
+.divider::before, .divider::after {
+  border-top:1px solid rgb(204,204,204);
+  content:"";
+  display:table-cell;
+  position:relative;
+  top:0.8em;
+  width:42%;
+}
+
+/* MILESTONE 4: INPUT SIGNUP INFO */
+
+main h2 {
+  font-size:15px;
+  line-height:45px;
+}
+
+
+input, label, select {
+  display: block;
+  height:52px; width:100%;
+  font-size:14px;
+  padding:14px;
+}
+
+label{
+  padding: 14px 0;
+  line-height:20px;
+  letter-spacing: 0.25px;
+  font-weight:700;
+
+}
+
+
+
+/* Getting stuck at date of birth same line layout */
+
+.date-of-birth-wrapper{
+  justify-content: space-between;
+  display: flex; 
+  /*declaring flex in the container so the contents stay in 1 line*/
+  padding-top:8px;
+}
+
+.month-wrapper{
+  width: 45%;
+}
+
+.day-wrapper{
+  width: 20%;
+}
+
+.year-wrapper{
+  width: 20%;
+}
+
+.group {
+  margin-top: 24px;
+}
+
+.small-label {
+  font-weight:normal;
+}
+
+aside {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgb(39, 39, 39);
+}
+
+.gender-wrapper {
+  display: flex; /* flex container, children wrapper will be in 1 line and space-between */
+  flex-direction: row;
+  flex-wrap:wrap; /* short hand flex-flow: row wrap; */
+}
+
+input[type="radio"] {
+  height:16px; width:16px;
+}
+
+.gender-label, input[type="radio"] {
+  display: inline;
+}
+
+.gender-label {
+  margin-left: 10px;
+  margin-right:20px;
+  padding:0;
+}
+
+.wrapper {
+  flex:1; /*set width of flex item, 1 equal portion of the parent */
+}
+
+
+
+

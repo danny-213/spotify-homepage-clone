@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Spotify Sign Up Page</title>
+    <link rel="icon" href="favicon.png" type="image/jpg">
+    <link href="sign-up-stylesheet.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body>
+    <!-- 
+      1. container with padding to center content
+      2. 2 parts: signing in with facebook or fill in form 
+    -->
+    <header>
+      <div class="container">
+        <img class ="spotify-logo" src="spotify-logo-black.svg" alt="spotify-logo">
+        <h1>Sign up for free to start listening.</h1>
+      </div>
+    </header>
+    <main>
+      <!--PART 1: Signup with Facebook
+      1. Signup button
+      2. paragraph with links -->
+      <div class="container">
+        <button class="fb-signup">Sign up with Facebook</button>
+        <p class="terms-conditions"><br>By clicking on sign-up, you agree to Spotify's 
+        <a href="">Terms and Conditions of Use</a>.<br>
+        <br>
+        To learn more about how Spotify collects, uses, shares and protects your personal data, 
+        please see <a href="">Spotify's Privacy Policy</a>.
+        <br><br></p>
+        <span class="divider">or</span>
+      </div>
+      <!--PART 2: Signup with Email address
+      1. Form with input box extend to full width
+      2. Date of birth input element on the same line, justify space between-->
+      <div class="container">
+        <h2>Sign up with your email address</h2>
+        <form>
+          <div class="group">
+            <label for="email">What's your email?</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email.">
+          </div>
+          <div class="group"> <!--group to define margin-->
+            <label for="confirm-email">Confirm your email?</label>
+            <input type="email" id="confirm-email" name="confirm-email" placeholder="Enter your email again.">
+          </div>
+          <div class="group">
+            <label for="password">Create a password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password.">
+          </div>
+          <div class="group">
+            <label for="profile-name">What should we call you?</label>
+            <input type="text" id="profile-name" name="profile-name" placeholder="Enter a profile name">
+            <aside>This appears on your profile.</aside>
+          </div>
+          <div class="group">
+            <label>What's your date of birth?</label>
+
+            <div class="date-of-birth-wrapper">
+              <div class="month-wrapper">
+                  <label for="birth-month" class="small-label">Month</label>            
+        
+                  <select id="birth-month" name="birth-month" value="Month">
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                  </select>
+              </div>
+
+              <div class="day-wrapper">
+                <label for="birth-day" class="small-label">Day</label>
+                <input id="birth-day" name="birth-day" placeholder="DD" min="1" max="30">
+              </div>
+
+              <div class="year-wrapper">
+                <label for="birth-year" class="small-label">Year</label>
+                <input id="birth-year" name="birth-year" placeholder="YYYY" min="1000" max="3000">
+              </div>
+            </div>
+          </div>
+          <div class="group">
+            <p>What's your gender?</p>
+            <!--radio type input needs same name to group together to select 1 option only-->
+            <div class="gender-wrapper">
+              <div class="wrapper">
+                <input id="male" type="radio" value="male" name="gender">
+                <label class="gender-label" for="male">Male</label>
+              </div>
+              <div class="wrapper">
+                <input id="female" type="radio" value="female" name="gender">
+                <label class="gender-label" for="female">Female</label>
+              </div>
+              <div class="wrapper">
+                <input id="nonebinary" type="radio" value="nonebinary" name="gender">
+                <label class="gender-label" for="nonebinary">None binary</label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+
+</html>

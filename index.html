@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <!--TUTORIAL LINK: https://gist.github.com/PrimeTimeTran/9efc382174c1943f8d0e714c128f0a06-->
+  <!--MILESTONE 1: Default setup--> 
+  <head>
+    <meta charset="utf-8">
+    <title>Spotify Homepage Clone</title>
+    <link rel="icon" href="favicon.png" type="image/jpg">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    
+  </head>
+  <body>
+    <!--
+      MILESTONE 2: Implement Structure
+      1. Nav bar
+      2. Header
+      3. Footer 
+    --> 
+    <nav>
+      <!--
+      MILESTONE 3: Create Nav Bar 
+      1. Spotify Logo on the top left
+      2. Horizontal list of hyperlinks on top right
+      3. Fixed position on top, transparent background(BONUS)
+      -->
+      <div class="container">
+        <img class="spotify-logo" src="spotify-logo.svg" alt="spotify-logo">
+        <ul class="menu">
+          <li><a href="">Premium</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">Download</a></li>
+          <li><a>|</a></li>
+          <li><a href="sign-up.html">Sign up</a></li>
+          <li><a href="">Log in</a></li>
+      </div>
+    </nav>
+    <header class="header1">
+      <!--
+      MILESTONE 4: Create Header with Banner
+      1. set background color for header tag
+      2. Vertically centered element in container 
+      2. Large text align left 
+      3. Small text
+      4. GET 3 MONTHS FREE Blue button (darken and bigger on hover), letter spacing letters
+      5. Add Round image on the right
+      -->
+      <div class="container">
+        <div class="left">
+          <p class="spotify-premium">Spotify premium</p>
+          <h1>Get 3 months of Premium for free </h1>
+          <p class="description">Enjoy ad-free music, 
+            offline listening, and more. Cancel anytime</p>
+          <button class="free-btn">GET 3 MONTHS FREE</button>
+        </div>
+        <div class="right">
+          <img class="round-artwork" src="round-artwork.png" alt="round-artwork">
+        </div>
+
+      </div>
+    </header>
+    <header class="header2">
+      <!--Create the 2nd banner
+      1. padding 
+      1. Grab class name to change color 
+      2. Change background color, 
+      3. Change button color
+      3. Add background image HeroBanner - Buble
+      4. -->
+      <div class="hero-img">
+        <div class="container">     
+          <div class="left2">
+            <p class="spotify-free">Spotify free</p>
+            <h1 class="listen-header">Listen is everything </h1>
+            <p class="description2">Millions of songs and podcasts. 
+              No credit card needed.
+            </p>
+            <button class="free-btn-2">GET 3 MONTHS FREE</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <!--
+      MILESTONE 5: Create Footer
+      1. logo, list of links, 
+      2. Padding between element inside container class
+      2. sharing social ROUND icon
+      3. Secondary Footer (BONUS)
+      -->
+      <div class="container">
+        <img class="spotify-logo" src="spotify-logo.svg" alt="spotify-logo">
+        <ul>
+          <li class="list-header">COMPANY</li>
+          <li><a href="">About</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">For the Record</a></li>
+        </ul>
+        <ul>
+          <li class="list-header">COMMUNITIES</li>
+          <li><a href="">For Artists</a></li>
+          <li><a href="">Developers</a></li>
+          <li><a href="">Advertising</a></li>
+          <li><a href="">Investors</a></li>
+          <li><a href="">Vendors</a></li>
+        </ul>
+        <ul>
+          <li class="list-header">USEFUL LINKS</li>
+          <li><a href="">Support</a></li>
+          <li><a href="">Web Player</a></li>
+          <li><a href="">Free Mobile App</a></li>
+        </ul>
+        <div class="share-social">
+          <button class="round-border">
+            <div class="white-line"><img class="insta-icon" src="insta-icon.svg" alt="insta-icon"></div>
+          </button>
+          <button class="round-border">
+            <div class="white-line"><img class="twitter-icon" src="twitter-icon.svg" alt="twitter-icon"></div>
+          </button>
+          <button class="round-border">
+            <div class="white-line"><img class="facebook-icon" src="facebook-icon.svg" alt="facebook-icon"></div>
+          </button>        
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+
+</html>
